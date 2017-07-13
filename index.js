@@ -8,6 +8,7 @@ lcd.backlight(0x07);
 var server = net.createServer((socket) => {
   socket.setEncoding('utf8');
   socket.on('data', (data) => {
+    console.log('received message: ' + data);
     lcd.clear()
     lcd.message(data);
   })
