@@ -1,0 +1,22 @@
+{
+  "name": "led-display",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauris/led-display.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mauris/led-display/issues"
+  },
+  "homepage": "https://github.com/mauris/led-display#readme",
+  "dependencies": {
+    "adafruit-i2c-lcd": "^1.0.2"
+  }
+}
