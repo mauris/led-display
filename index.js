@@ -1,6 +1,6 @@
 const TURN_ON = 0x07;
 const TURN_OFF = 0x00;
-const BACKLIGHT_DELAY = 5000; // ms
+const BACKLIGHT_DELAY = 20000; // ms
 const LISTEN_PORT = 1337;
 
 var net = require('net');
@@ -12,7 +12,6 @@ var timer;
 
 var server = net.createServer((socket) => {
   socket.name = socket.remoteAddress + ":" + socket.remotePort;
-  console.log(socket.name + ' has connected.');
   socket.setEncoding('utf8');
   socket.on('data', (data) => {
     console.log('[' + socket.name + ']: ' + data);
