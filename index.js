@@ -7,6 +7,7 @@ lcd.backlight(0x07);
 
 var server = net.createServer((socket) => {
   socket.on('data', (data) => {
+    lcd.clear()
     lcd.message(data);
   })
 });
